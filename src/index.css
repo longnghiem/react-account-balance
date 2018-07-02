@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.App {
+  margin: 0 auto;
+  width: 600px;
+  display: grid;
+  justify-items: center;
+  border: 1px solid #78a1e8;
+  padding: 0 1em
+}
+/* FORM ---------- */
+form {
+  margin: 1em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  height: 30px;
+  background-color: #eee;
+  color: #111;
+  border-radius: 4px;
+  text-indent: 6px;
+  border: none;
+}
+
+select {
+  -webkit-appearance: none;
+  border-radius: 5px;
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  background-color: #eee;
+  width: 150px;
+  padding: 7px;
+  cursor: pointer;
+}
+button {
+  min-height: 33px;
+  min-width: 33px;
+  cursor: pointer;
+}
+
+/* SUM CONTAINER ---------- */
+.sums-container {
+  width: 100%;
+  background-color: #3E82FD;
+  color: #eee;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.balance {
+  grid-column: span 2;
+  text-align: center;
+}
+.balance div {
+  color: #8fb0ea;
+  margin-top: -15px
+}
+.sums-container h4 {
+  display: inline-block;
+  margin-right: 1em
+}
+.expense span {
+  color: red;
+}
+/* SECTION---------- */
+section {
+  width: 100%;
+  padding: 1em;
+}
+.transactions-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1.5em;
+  background-color: #eee;
+  margin: 0 -1em;
+}
+.transaction:nth-child(even){
+  background-color: #ddd;
+}
+.red,
+.redbalance {
+  color: red;
+}
+.blue {
+  color: #3E82FD;
+}
+.red::before{
+  content:'- '
+}
+.time {
+  font-weight: lighter;
+  color: #aaa;
+  font-size: 0.9em;
+}
